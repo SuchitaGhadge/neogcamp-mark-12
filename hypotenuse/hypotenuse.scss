@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,800;1,400&display=swap');
 $primary-color: #ffcc00;
+$font-color: #2e2c2c;
 
 *{
     margin: 0;
@@ -10,6 +11,7 @@ $primary-color: #ffcc00;
 body{
     width: 100vw;
     height: 100vh;
+    color: $font-color;
 
     .container{
         .navigation{
@@ -23,7 +25,7 @@ body{
                     
                     .nav-link{
                         text-decoration: none;
-                        color: #fff;
+                        color: $font-color;
                         font-weight: 500;
 
                         &:hover, &:focus{
@@ -42,6 +44,7 @@ body{
             padding: 10px;
             justify-content: center;
             text-align: center;
+            
         }
 
        .input-container{
@@ -78,12 +81,13 @@ body{
             border-radius: 0.5rem;
             letter-spacing: 2px;
             background: $primary-color;
-            color: #fff;
+            color: $font-color;
             margin-bottom: 10px;
 
             &:hover, &:focus{
                 border: 2px solid $primary-color;
                 color: $primary-color;
+                font-weight: bold;
                 background: #fff;
             }
         }
@@ -95,6 +99,16 @@ body{
         justify-content: center;
         align-items: center;
     }
-
+    .footer{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        margin: 0;
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+        background-color: $primary-color;
+        color: $font-color;
+    }
     }
 }

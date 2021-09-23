@@ -13,9 +13,9 @@ function calculateHypotenuse(){
         const sumOfSquares = calculateSumOfSquares(Number(sides[0].value), Number(sides[1].value))
         const lengthOfhypotenuse = Math.sqrt(sumOfSquares).toFixed(2)
         // console.log(sumOfSquares);
-        outputSide.innerHTML =`Length of Hypotenuse is ${lengthOfhypotenuse}`;
+        outputSide.innerText =`Length of Hypotenuse is ${lengthOfhypotenuse}`;
     }else{
-        outputSide.innerHTML = "Please enter a valid inputs"
+        outputSide.innerText = "Please enter a valid inputs"
     }
 }
 

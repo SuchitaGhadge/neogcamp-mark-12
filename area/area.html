@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./area.css">
+    <title>Calculate Area</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="navigation">
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="../quiz/quiz.html">Play quiz</a></li>
+                <li class="nav-item"><a class="nav-link" href="../hypotenuse/hypotenuse.html">Calculate Hypotenuse</a></li>
+                <li class="nav-item"><a class="nav-link active" href="#">Calculate Area</a></li>
+            </ul>
+        </nav>
+        <h1 class="heading">Calculate Hypotenuse</h1>
+        <div class="input-container">
+            <label for="input-height">height = </label>
+            <input type="number" id="input-height" class="input">
+        </div>
+       <div class="input-container">
+            <label for="input-base">base = </label>
+            <input type="number" id="input-base" class="input">
+       </div>
+        <div class="btn-container">
+            <button id="calc-btn">Calculate</button>
+        </div>
+        <div id="output-box"></div>
+        <footer class="footer">
+            <p>To calculate Area of a triangle of given user input, it multiplies the given height and base and then divide it by 2</p>
+        </footer>
+    </div>
+
+    <script src="./area.js"></script>
+</body>
+</html>

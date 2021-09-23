@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,800;1,400&display=swap');
 $primary-color: #ffcc00;
+$font-color: #2e2c2c;
 
 *{
     margin: 0;
@@ -10,6 +11,7 @@ $primary-color: #ffcc00;
 body{
     width: 100vw;
     height: 100vh;
+    color: $font-color;
 
     .container{
         .navigation{
@@ -23,7 +25,7 @@ body{
                     
                     .nav-link{
                         text-decoration: none;
-                        color: #fff;
+                        color: $font-color;
                         font-weight: 500;
 
                         &:hover, &:focus{
@@ -62,12 +64,13 @@ body{
             font-size: 14px;
             border: none;
             border-radius: 0.5rem;
-            color: #fff;
+            color: $font-color;
             background: $primary-color;
             letter-spacing: 2px;
 
             &:hover, &:focus{
                 color: $primary-color;
+                font-weight: bold;
                 transition: 0.2s;
                 background: #fff;
                 border: 2px solid $primary-color;
@@ -78,5 +81,18 @@ body{
         #output-quiz{
             margin: 10px 25px ;
         }
+
+        .footer{
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            margin: 0;
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            background-color: $primary-color;
+            color: $font-color;
+        }    
     }
+
 }

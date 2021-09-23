@@ -17,7 +17,7 @@ function isTriangle(){
             outputBox.innerText = "Oh oh!! The angles does not form a triangle"
         }
     }else{
-        console.log('all 3 values are not entered')
+        outputBox.innerText = "Please enter all valid inputs"
     }
 }
 

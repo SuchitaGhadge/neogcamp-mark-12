@@ -8,6 +8,7 @@
 body {
   width: 100vw;
   height: 100vh;
+  color: #2e2c2c;
 }
 
 body .container .navigation .nav-list {
@@ -24,7 +25,7 @@ body .container .navigation .nav-list .nav-item {
 
 body .container .navigation .nav-list .nav-item .nav-link {
   text-decoration: none;
-  color: #fff;
+  color: #2e2c2c;
   font-weight: 500;
 }
 
@@ -93,13 +94,14 @@ body .container .btn-container #hypotenuse-btn {
   border-radius: 0.5rem;
   letter-spacing: 2px;
   background: #ffcc00;
-  color: #fff;
+  color: #2e2c2c;
   margin-bottom: 10px;
 }
 
 body .container .btn-container #hypotenuse-btn:hover, body .container .btn-container #hypotenuse-btn:focus {
   border: 2px solid #ffcc00;
   color: #ffcc00;
+  font-weight: bold;
   background: #fff;
 }
 
@@ -114,5 +116,17 @@ body .container #output-side {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+body .container .footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  margin: 0;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  background-color: #ffcc00;
+  color: #2e2c2c;
 }
 /*# sourceMappingURL=hypotenuse.css.map */

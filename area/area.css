@@ -8,6 +8,7 @@
 body {
   width: 100vw;
   height: 100vh;
+  color: #2e2c2c;
 }
 
 body .container .navigation .nav-list {
@@ -26,7 +27,6 @@ body .container .navigation .nav-list .nav-item .nav-link {
   text-decoration: none;
   color: #2e2c2c;
   font-weight: 500;
-  color: #2e2c2c;
 }
 
 body .container .navigation .nav-list .nav-item .nav-link:hover, body .container .navigation .nav-list .nav-item .nav-link:focus {
@@ -45,64 +45,77 @@ body .container .heading {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  color: #2e2c2c;
 }
 
-body .container .main {
+body .container .input-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: #2e2c2c;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 15px;
 }
 
-body .container .main label {
+body .container .input-container label {
   font-size: 18px;
-  padding: 5px;
-}
-
-body .container .main input {
-  width: 500px;
-  padding: 5px 10px;
-  margin-bottom: 5px;
-  outline: none;
+  padding: 0px 10px;
   line-height: 1.5rem;
-  font-size: 14px;
 }
 
-body .container .main #istriangle-btn {
-  margin: 10px 0px;
-  padding: 10px 25px;
-  font-size: 14px;
+body .container .input-container .input {
+  line-height: 1.5rem;
+  font-size: 18px;
+  width: 500px;
+  padding: 5px;
+  outline: none;
+}
+
+body .container .btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container .btn-container #calc-btn {
+  padding: 8px 20px;
+  outline: none;
   border: none;
   border-radius: 0.5rem;
-  color: #2e2c2c;
-  background: #ffcc00;
   letter-spacing: 2px;
+  background: #ffcc00;
+  color: #2e2c2c;
+  margin-bottom: 10px;
 }
 
-body .container .main #istriangle-btn:hover, body .container .main #istriangle-btn:focus {
+body .container .btn-container #calc-btn:hover, body .container .btn-container #calc-btn:focus {
+  border: 2px solid #ffcc00;
   color: #ffcc00;
   font-weight: bold;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
   background: #fff;
-  border: 2px solid #ffcc00;
 }
 
-body .container .main #output-box {
-  margin-top: 10px;
-  padding: 25px 50px;
-  font-size: 18px;
+body .container #output-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px 25px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 body .container .footer {
@@ -116,4 +129,4 @@ body .container .footer {
   background-color: #ffcc00;
   color: #2e2c2c;
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=area.css.map */
